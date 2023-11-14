@@ -1,0 +1,5 @@
+<div class="nav">
+  <p *ngFor="let item of navList" [ngClass]="item.active ? 'navItem active' : 'navItem'" (click)="setNav(item)">
+    {{ item.name }}
+  </p>
+</div>

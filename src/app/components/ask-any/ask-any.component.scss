@@ -1,0 +1,38 @@
+@import '../../../styles.scss';
+.ask {
+  padding: 20px;
+  width: 800px;
+  margin: auto;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 200px;
+  margin-left: 400px;
+
+  .box {
+    height: 38px;
+    border: 1px solid $blue;
+    padding: 4px 8px;
+    outline: none;
+    &:focus {
+      border-color: $purple;
+    }
+  }
+  .answer {
+    height: 38px;
+    border: 1px solid $peach;
+    padding: 4px 8px;
+    outline: none;
+    background-color: $peach;
+  }
+  .label {
+    padding-left: 4px;
+    margin: 4px 0;
+    color: $blue;
+    text-transform: uppercase;
+  }
+  .inputbox {
+    display: flex;
+    flex-direction: column;
+  }
+}

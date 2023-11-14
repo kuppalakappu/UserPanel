@@ -1,0 +1,10 @@
+<app-studentheader></app-studentheader>
+<div class="content">
+  <app-sidenav (optionEmitter)="setOption($event)"></app-sidenav>
+  <div [ngSwitch]="option">
+    <div *ngSwitchCase="'ask any'"><app-ask-any></app-ask-any></div>
+  </div>
+</div>
+<p *ngIf="showDialog">
+  <app-popup [header]="header" [message]="message" (closeEmitter)="closePopup($event)"></app-popup>
+</p>

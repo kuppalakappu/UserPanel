@@ -1,0 +1,39 @@
+@import '../../../styles.scss';
+.head {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $blue;
+  color: white;
+  .header {
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 40px;
+  }
+
+  .logout {
+    color: $blue;
+    background-color: white;
+    height: 100%;
+    padding: 0 20px;
+    &:hover {
+      background-color: $peach;
+    }
+  }
+}
+.img {
+  height: 100%;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
