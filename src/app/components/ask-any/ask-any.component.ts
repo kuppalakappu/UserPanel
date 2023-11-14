@@ -11,9 +11,9 @@ export class AskAnyComponent {
   answer: string = '';
   constructor(private askAnyService: AskAnyService) {}
   quest() {
-    const credentials = { question: this.question };
+    const ques = { question: this.question };
 
-    this.askAnyService.quest(credentials).subscribe((res: Answer) => {
+    this.askAnyService.quest(ques).subscribe((res: Answer) => {
       this.answer = res.answer;
     });
   }

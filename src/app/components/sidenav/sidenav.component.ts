@@ -8,8 +8,8 @@ import { NavBar } from './sidenav.types';
 export class SidenavComponent {
   @Output() optionEmitter = new EventEmitter();
   navList: NavBar[] = [
-    { name: 'Practice Assesment', active: false },
-    { name: 'Free Assesment', active: false },
+    { name: 'Practice Assessment', active: true },
+    { name: 'Free Assessment', active: false },
     { name: 'Ask Any', active: false },
   ];
 

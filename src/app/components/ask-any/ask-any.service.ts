@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
 export class AskAnyService {
   constructor(private httpClient: HttpClient) {}
 
-  quest(credentials: any): Observable<any> {
-    return this.httpClient.post('https://localhost:7137/api/User/GetUserLoginDetails', credentials, {
+  quest(question: any): Observable<any> {
+    return this.httpClient.get('https://localhost:7137/api/User/GetUserLoginDetails' + question, {
       headers: {
         'content-type': 'application/json',
       },

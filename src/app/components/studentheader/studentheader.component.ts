@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class StudentheaderComponent {
   @Input() showlogout: boolean = true;
+  userEmail: string = localStorage.getItem('userEmail') || '';
 }

@@ -18,6 +18,13 @@
       border-color: $purple;
     }
   }
+  .answer {
+    height: 38px;
+    border: 1px solid $peach;
+    padding: 4px 8px;
+    outline: none;
+    background-color: $peach;
+  }
   .label {
     padding-left: 4px;
     margin: 4px 0;

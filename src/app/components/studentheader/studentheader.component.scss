@@ -31,3 +31,9 @@
   align-items: center;
   gap: 10px;
 }
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
