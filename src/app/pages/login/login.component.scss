@@ -1,40 +1,40 @@
 @import '../../../styles.scss';
 .login {
-  padding: 20px;
-  width: 33%;
-  margin: auto;
-  border: 1px solid $blue;
-  border-radius: 4px;
-  font-size: 12px;
-  margin-top: 20px;
-  .header {
-    font-size: 20px;
-    color: $purple;
-    text-align: center;
-    padding: 10px;
-    text-transform: uppercase;
-  }
-  .box {
-    height: 38px;
-    border: 1px solid $blue;
-    padding: 4px 8px;
-    outline: none;
-    &:focus {
-      border-color: $purple;
-    }
-  }
-  .label {
-    padding-left: 4px;
-    margin: 4px 0;
-    color: $blue;
-    text-transform: uppercase;
-  }
-  .inputbox {
-    display: flex;
-    flex-direction: column;
-  }
+	padding: 20px;
+	width: 33%;
+	margin: auto;
+	border: 1px solid $blue;
+	border-radius: 4px;
+	font-size: 12px;
+	margin-top: 20px;
+	.header {
+		font-size: 20px;
+		color: $purple;
+		text-align: center;
+		padding: 10px;
+		text-transform: uppercase;
+	}
+	.box {
+		height: 38px;
+		border: 1px solid $blue;
+		padding: 4px 8px;
+		outline: none;
+		&:focus {
+			border-color: $purple;
+		}
+	}
+	.label {
+		padding-left: 4px;
+		margin: 4px 0;
+		color: $blue;
+		text-transform: uppercase;
+	}
+	.inputbox {
+		display: flex;
+		flex-direction: column;
+	}
 }
 .img {
-  width: 100%;
-  // height:250px;
+	width: 100%;
+	// height:250px;
 }

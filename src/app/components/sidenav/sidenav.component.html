@@ -1,12 +1,12 @@
 <div class="nav">
-  <p
-    *ngFor="let item of navList; index as i"
-    [ngClass]="item.active ? 'navItem active' : 'navItem'"
-    (click)="setNav(item)"
-    role="button"
-    [attr.tabindex]="-1"
-    (keydown)="setNav(item)"
-  >
-    {{ item.name }}
-  </p>
+	<p
+		*ngFor="let item of navList; index as i"
+		[ngClass]="item.active ? 'navItem active' : 'navItem'"
+		(click)="setNav(item)"
+		role="button"
+		[attr.tabindex]="-1"
+		(keydown)="setNav(item)"
+	>
+		{{ item.name }}
+	</p>
 </div>

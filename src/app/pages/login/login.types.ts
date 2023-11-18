@@ -1,3 +1,3 @@
 export type Credentials = {
-  password: string;
+	password: string;
 };
