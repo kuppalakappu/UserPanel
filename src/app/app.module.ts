@@ -16,20 +16,26 @@ import { PopupComponent } from './components/popup/popup.component';
 import { AskAnyComponent } from './components/ask-any/ask-any.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    HeaderComponent,
-    PagenotfoundComponent,
-    SidenavComponent,
-    LoginComponent,
-    StudentheaderComponent,
-    StudentComponent,
-    PopupComponent,
-    AskAnyComponent,
-  ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, NgbModule, HttpClientModule],
-  providers: [],
-  bootstrap: [AppComponent],
+	declarations: [
+		AppComponent,
+		DashboardComponent,
+		HeaderComponent,
+		PagenotfoundComponent,
+		SidenavComponent,
+		LoginComponent,
+		StudentheaderComponent,
+		StudentComponent,
+		PopupComponent,
+		AskAnyComponent,
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		FormsModule,
+		NgbModule,
+		HttpClientModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent],
 })
 export class AppModule {}

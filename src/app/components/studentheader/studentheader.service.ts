@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Answer, Question } from './askany.types';
 @Injectable({
 	providedIn: 'root',
 })
-export class AskAnyService {
+export class StudentheaderService {
 	constructor(private httpClient: HttpClient) {}
 
-	quest(question: Question): Observable<Answer> {
+	logOut() {
+		console.log('ddd');
 		return this.httpClient.get(
-			'https://localhost:7137/api/User/GetUserLoginDetails' + question,
+			'https://localhost:7137/api/User/GetUserLoginDetails',
 			{
 				headers: {
 					'content-type': 'application/json',

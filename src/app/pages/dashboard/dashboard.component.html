@@ -6,5 +6,9 @@
   </div>
 </div>
 <p *ngIf="showDialog">
-  <app-popup [header]="header" [message]="message" (closeEmitter)="closePopup($event)"></app-popup>
+  <app-popup
+    [header]="header"
+    [message]="message"
+    (closeEmitter)="closePopup($event)"
+  ></app-popup>
 </p>

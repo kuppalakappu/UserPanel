@@ -7,8 +7,10 @@
     />
     <p class="header">Welcome to Student Portal</p>
   </aside>
-  <aside class="right">
+  <aside class="right" *ngIf="showlogout">
     <div>{{ userEmail }}</div>
-    <button class="logout" *ngIf="showlogout">&#xF1C3; Log Out</button>
+    <button class="logout" (click)="logOut()">
+      <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out
+    </button>
   </aside>
 </div>

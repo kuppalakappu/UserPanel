@@ -1,3 +1,7 @@
 export type Answer = {
-  answer: string;
+	answer: string;
+};
+
+export type Question = {
+	question: string;
 };
