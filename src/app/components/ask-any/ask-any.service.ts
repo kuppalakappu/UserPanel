@@ -8,7 +8,7 @@ import { Answer, Question } from './askany.types';
 export class AskAnyService {
 	constructor(private httpClient: HttpClient) {}
 
-	quest(question: Question): Observable<Answer> {
+	quest(question: Question): Observable<any> {
 		return this.httpClient.get(
 			'https://localhost:7137/api/User/GetUserLoginDetails' + question,
 			{

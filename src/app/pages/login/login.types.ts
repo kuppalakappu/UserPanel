@@ -1,3 +1,6 @@
 export type Credentials = {
-	password: string;
+	email: string;
+  location:string;
+   ipAddress:string;
+   //password:string;
 };

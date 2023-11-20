@@ -16,10 +16,10 @@ export class LoginComponent {
 	) {}
 
 	login() {
-		const credentials = { email: this.email, location: '', ipAddress: '' };
-
+		const credentials:Credentials = { email: this.email, location: '', ipAddress: '' };
+    this.route.navigate(['/dashboard']);
 		this.loginService.login(credentials).subscribe((res: Credentials) => {
-			this.password = res.password;
+			//this.password = res.password;
 			this.route.navigate(['/dashboard']);
 		});
 	}

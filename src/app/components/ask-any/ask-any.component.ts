@@ -8,7 +8,7 @@ import { Answer, Question } from './askany.types';
 })
 export class AskAnyComponent {
 	question = '';
-	answer = '';
+	answer = '123';
 	constructor(private askAnyService: AskAnyService) {}
 	quest() {
 		const ques: Question = { question: this.question };

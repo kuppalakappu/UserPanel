@@ -8,7 +8,7 @@ import type { Credentials } from './login.types';
 export class LoginService {
 	constructor(private httpClient: HttpClient) {}
 
-	login(credentials: Credentials): Observable<Credentials> {
+	login(credentials: Credentials): Observable<any> {
 		return this.httpClient.post(
 			'https://localhost:7137/api/User/GetUserLoginDetails',
 			credentials,

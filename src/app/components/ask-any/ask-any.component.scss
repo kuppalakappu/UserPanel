@@ -24,6 +24,13 @@
 		padding: 4px 8px;
 		outline: none;
 		background-color: $peach;
+        text-align: center;
+        border-radius: 4px;
+        color:$blue;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 	}
 	.label {
 		padding-left: 4px;
